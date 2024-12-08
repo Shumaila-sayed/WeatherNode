@@ -9,6 +9,10 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: url(./assets/rodrigo-soares-SCvlb1FWeuY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 img, picture, video, canvas, svg {
@@ -22,6 +26,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  color: white
 }
 
 p {
@@ -34,4 +39,93 @@ h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.logo::after {
+    content: 'Node';
+    color: rgb(250, 190, 79);
+}
+
+form {
+    position: relative;
+}
+
+input{
+  width: 18em;
+  background-color: rgba(240, 248, 255, 0.11);
+  border: none;
+  padding: 0.2em 0.6em;
+  color: rgb(231, 213, 213);
+  margin-top: 0.4em;
+}
+
+input::placeholder {
+  color: rgb(231, 213, 213);
+}
+
+.error-msg {
+  color: rgb(207, 42, 42);
+  position: absolute;
+display: none;
+}
+
+.main-weather-display {
+   width: fit-content;
+   margin: auto;
+   padding: 2.5em;
+   display: flex;
+   font-weight: bolder;
+   gap: 1.6em;
+}
+
+.weather-details {
+  border-left: 2px solid rgba(255, 255, 255, 0.555);
+  padding-left: 1em;
+  margin-top: 6.4em;
+  line-height: 2em;
+  margin-bottom: 3em;
+}
+
+.location {
+    margin-top: -0.3em;
+}
+
+.degrees {
+   font-size: 8.6em;
+   margin-top: -0.2em;
+   position: relative;
+   color: white;
+}
+
+.symbol {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 9rem;
+}
+
+.symbol-small {
+ font-size: 0.5em;
+ position: absolute;
+ bottom:  1.3em;
+ right: -0.5em;
+}
+
+
+.feels-like{
+  position: relative;
+  color: white;
+}
+
+.credits {
+    opacity: 0.8;
+    margin-top: 10em;
+    font-size: x-small;
+    padding: 2em;
 }
