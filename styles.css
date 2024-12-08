@@ -7,11 +7,11 @@
 }
 
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-image: url(./assets/rodrigo-soares-SCvlb1FWeuY-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+ line-height: 1.5;
+ -webkit-font-smoothing: antialiased;
+ background-image: url(./assets/rodrigo-soares-SCvlb1FWeuY-unsplash.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -42,18 +42,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
 }
 
 .logo::after {
-    content: 'Node';
-    color: rgb(250, 190, 79);
+  content: 'Node';
+  color: rgb(250, 190, 79);
 }
 
 form {
-    position: relative;
+  position: relative;
 }
 
 input{
@@ -72,16 +72,36 @@ input::placeholder {
 .error-msg {
   color: rgb(207, 42, 42);
   position: absolute;
-display: none;
+ display: none;
+}
+
+.deg-toggle{
+  display: flex;
+  margin-right: 2em;
+}
+
+.deg {
+  padding: 0.2em 1em;
+  background-color: rgba(48, 48, 131, 0.568);
+  text-align: center;
+  color: rgb(211, 210, 210);
+  position: relative;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#farhen {
+  background-color: rgb(250, 190, 79);
+  color: black;
 }
 
 .main-weather-display {
-   width: fit-content;
-   margin: auto;
-   padding: 2.5em;
-   display: flex;
-   font-weight: bolder;
-   gap: 1.6em;
+  width: fit-content;
+  margin: auto;
+  padding: 3em 2.5em;
+  display: flex;
+  font-weight: bolder;
+  gap: 1.6em;
 }
 
 .weather-details {
@@ -93,14 +113,14 @@ display: none;
 }
 
 .location {
-    margin-top: -0.3em;
+  margin-top: -0.3em;
 }
 
 .degrees {
-   font-size: 8.6em;
-   margin-top: -0.2em;
-   position: relative;
-   color: white;
+  font-size: 8.6em;
+  margin-top: -0.2em;
+  position: relative;
+  color: white;
 }
 
 .symbol {
@@ -117,15 +137,14 @@ display: none;
  right: -0.5em;
 }
 
-
 .feels-like{
   position: relative;
   color: white;
 }
 
 .credits {
-    opacity: 0.8;
-    margin-top: 10em;
-    font-size: x-small;
-    padding: 2em;
+  opacity: 0.8;
+  margin-top: 8em;
+  font-size: x-small;
+  padding: 2em;
 }
