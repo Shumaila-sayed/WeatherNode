@@ -29,7 +29,7 @@ Check out the live demo of **Weather Node**:
 
 **Screenshot**
 
-[Screenshot](./assets/Screenshot%20(48).png)
+![Screenshot](./assets/Screenshot%20(48).png)
 
 ## Usage 📲
 
